@@ -1,0 +1,39 @@
+{
+  "name": "vite-plugin-msw",
+  "version": "1.0.0",
+  "description": "a vite plugin for vite-msw",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "typings": "./lib/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./lib/index.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [],
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.15.29",
+    "clean-webpack-plugin": "^4.0.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "dependencies": {
+    "fs-extra": "^11.3.0",
+    "fsevents": "^2.3.2",
+    "msw": "^2.10.2",
+    "vite": "^6.3.5"
+  }
+}
