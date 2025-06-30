@@ -1,4 +1,4 @@
-# vite-plugin-example
+# vite-plugin-msw
 
 一个 vite 插件，用于在工程化项目中本地 mock 拦截请求使用
 
