@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-msw",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "a vite plugin for vite-msw",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",

@@ -1,9 +1,12 @@
 import fs from "fs-extra";
 import path from "path";
+import { fileURLToPath } from 'node:url';
 import { moduleInfoFileContent, indexInfoFileContent } from "./template";
 import { loadEnv } from "vite";
 
 const developmentStr = "development";
+const _filename = fileURLToPath(import.meta.url);
+
 function getPwd() {
   return process.cwd();
 }
@@ -85,7 +88,7 @@ export default function vitePluginMsw(options: any = {}) {
         // 根据请求路径生成不同内容
         if (req.url.includes("mockServiceWorker.js")) {
           const blobStr = await fs.readFile(
-            path.resolve(__dirname, "./mockServiceWorker.js"),
+            path.resolve(_filename, "../mockServiceWorker.js"),
             "utf-8"
           );
           res.setHeader("Content-Type", "text/javascript");
